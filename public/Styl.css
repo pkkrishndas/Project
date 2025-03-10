@@ -1,0 +1,201 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #7a42f4, #5a32c4);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #ffeb3b;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background: #ffeb3b;
+    color: #333;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #fff176;
+}
+
+/* Profile Card */
+.profile-card {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.card {
+    width: 280px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card h2 {
+    margin: 15px 0 5px;
+}
+
+.card p {
+    color: #777;
+}
+
+.card ul {
+    list-style: none;
+    padding: 15px;
+}
+
+.card ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.card ul li:last-child {
+    border-bottom: none;
+}
+
+/* About, Skills */
+.about, .skills, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #ddd;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+    width: 60%;
+    transition: 0.3s;
+}
+
+.skills li:hover {
+    background: #ccc;
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: #7a42f4;
+    outline: none;
+}
+
+.contact button {
+    width: 100%;
+    padding: 12px;
+    background: #7a42f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #5a32c4;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+    .skills li, .card {
+        width: 90%;
+    }
+    .btn-primary {
+        padding: 10px 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a img {
+    margin: 10px;
+    border-radius: 50%; /* Circle banane ke liye */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+a img:hover {
+    transform: scale(1.1); /* Hover effect */
+}
