@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 
 
-require
+require('dotenv').config();
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
@@ -52,5 +52,5 @@ app.post("/submit", (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log(`Hare Krishna! Server is running on http://localhost:${port}`);
+    console.log(`Hare Krishna! Server is running on http://localhost:${PORT}`);
 });
